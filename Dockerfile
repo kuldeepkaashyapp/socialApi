@@ -7,4 +7,4 @@ RUN ./mvnw dependency:go-offline
 COPY src ./src
 RUN ./mvnw clean package -DskipTests
 EXPOSE 8089
-ENTRYPOINT ["java", "-jar", "target/social-api-1.0.0.jar"]
+ENTRYPOINT ["sh", "-c", "java -jar target/*.jar"]
