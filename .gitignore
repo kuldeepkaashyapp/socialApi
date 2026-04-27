@@ -48,7 +48,7 @@ logs/
 .env.production
 
 # Application properties with secrets
-src/main/resources/application-prod.properties
+
 src/main/resources/application-local.properties
 
 # Docker
@@ -64,3 +64,4 @@ src/main/resources/application-local.properties
 *.zip
 *.tar.gz
 *.rar
+/src/test/java/
